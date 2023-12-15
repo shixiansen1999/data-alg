@@ -2,7 +2,6 @@ package com.sbx.alg;
 
 import org.junit.Test;
 
-import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -125,7 +124,7 @@ public class ProvincesTest {
      * 查找元素所属集合，即根节点
      * @param parent 并查集
      * @param x 查找元素x
-     * @return
+     * @return 省份数量
      */
     public int find(int[] parent, int x) {
         return parent[x] == x ? x : (parent[x] = find(parent, parent[x]));
